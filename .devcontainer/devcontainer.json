@@ -16,6 +16,14 @@
   },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [3000],
+  "portsAttributes": {
+	"3000": {
+		"label": "Application port"
+	},
+	"64120": {
+		"label": "SonarLint"
+	}
+},
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": {
     "Change User shell": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/init.sh",

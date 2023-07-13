@@ -91,6 +91,7 @@
 - [ ] 백엔드 템플릿 연동 (private)
 - [ ] 불필요한 확장 기능 제거 (vscjava.vscode-java-pack)
 - [ ] MockAPI 기능 추가
+- [ ] workspace 폴더 변경 -> /home/demian/workspace
 
 ## Reference
 
