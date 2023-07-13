@@ -1,0 +1,79 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+  "name": "Frontend",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "username": "demian",
+      "userUid": "1001",
+      "userGid": "1001"
+    },
+    "ghcr.io/devcontainers/features/node:1": { "version": "18" },
+    "ghcr.io/devcontainers/features/java:1": { "version": "17" }
+  },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [3000],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": {
+    "Change User shell": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/init.sh",
+    "Yarn enable": "corepack enable"
+  },
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "formulahendry.auto-rename-tag",
+        "aaron-bond.better-comments",
+        "mikestead.dotenv",
+        "usernamehw.errorlens",
+        "dsznajder.es7-react-js-snippets",
+        "dbaeumer.vscode-eslint",
+        "mhutchie.git-graph",
+        "chrisbibby.hide-node-modules",
+        "oderwat.indent-rainbow",
+        "liamhammett.inline-parameters",
+        "PKief.material-icon-theme",
+        "christian-kohler.npm-intellisense",
+        "42Crunch.vscode-openapi",
+        "esbenp.prettier-vscode",
+        "SonarSource.sonarlint-vscode",
+        "meganrogge.template-string-converter",
+        "rangav.vscode-thunder-client",
+        "redhat.vscode-yaml",
+        "Huuums.vscode-fast-folder-structure",
+        "zhuangtongfa.material-theme"
+        // 현재 feature에서 설치한 extension을 제거하는 기능이 없기 때문에 개별적으로 사용안함으로(작업영역) 사용 More info : https://github.com/devcontainers/features/issues/386
+        //["vscjava.vscode-java-pack"]
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll": true,
+          "source.organizeImports": true
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "sonarlint.disableTelemetry": true,
+        "recommendations": [
+          "streetsidesoftware.code-spell-checker",
+          "yzane.markdown-pdf",
+          "yzhang.markdown-all-in-one",
+          "DavidAnson.vscode-markdownlint"
+        ]
+      }
+    }
+  },
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  "remoteUser": "demian",
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}",
+    "NODE_ENV": "development"
+  },
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "8gb"
+  }
+}
