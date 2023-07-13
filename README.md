@@ -6,6 +6,12 @@
 
 미리 정의된 개발 환경을 사용하고 공유할 수 있어, 모든 개발자가 동일한 개발 환경에서 작업을 시작할 수 있습니다. 이를 통해 협업이 원활해지고 개발 환경에 대한 일관성을 유지할 수 있습니다.
 
+- 장점
+  - 동일한 VSCODE 초기 설정
+  - 동일한 VSCODE 확장 기능 초기 설정
+  - 동일한 Node 버전 및 OS 사용
+  - 개발환경 변경 추적 가능
+
 ## Installation
 
 1. [Docker Desktop](https://www.docker.com/products/docker-desktop/)
@@ -80,8 +86,14 @@
 
 - prettierrc 추가
 
+## TODO
+
+- [ ] 백엔드 템플릿 연동 (private)
+- [ ] 불필요한 확장 기능 제거 (vscjava.vscode-java-pack)
+- [ ] MockAPI 기능 추가
+
 ## Reference
 
-[Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
-[Development Containers](https://containers.dev/)
-[Introduction to dev containers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
+- [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
+- [Development Containers](https://containers.dev/)
+- [Introduction to dev containers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
