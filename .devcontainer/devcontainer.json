@@ -52,7 +52,8 @@
         "rangav.vscode-thunder-client",
         "redhat.vscode-yaml",
         "Huuums.vscode-fast-folder-structure",
-        "zhuangtongfa.material-theme"
+        "zhuangtongfa.material-theme",
+        "EditorConfig.EditorConfig"
         // 현재 feature에서 설치한 extension을 제거하는 기능이 없기 때문에 개별적으로 사용안함으로(작업영역) 사용 More info : https://github.com/devcontainers/features/issues/386
         //["vscjava.vscode-java-pack"]
       ],
