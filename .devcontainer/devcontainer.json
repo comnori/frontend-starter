@@ -1,87 +1,93 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-  "name": "Frontend",
-  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "name": "vite-template-awesome-soho",
   "image": "mcr.microsoft.com/devcontainers/base:jammy",
-  // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
-      "username": "demian",
-      "userUid": "1001",
-      "userGid": "1001"
+      "userGid": "1001",
+      "username": "comnori",
+      "userUid": "1001"
     },
-    "ghcr.io/devcontainers/features/node:1": { "version": "18" },
-    "ghcr.io/devcontainers/features/java:1": { "version": "17" }
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
   },
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  "forwardPorts": [3000],
-  "portsAttributes": {
-	"3000": {
-		"label": "Application port"
-	},
-	"64120": {
-		"label": "SonarLint"
-	}
-},
-  // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": {
     "Change User shell": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/init.sh",
-    "Yarn enable": "corepack enable"
+    "Yarn enable": "corepack enable",
+    "Oh My Zsh Installer for Docker": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/zsh-in-docker.sh -t jonathan -p git -p ssh-agent -p https://github.com/zsh-users/zsh-autosuggestions -p https://github.com/zsh-users/zsh-completions",
+    "Installation global package": "yarn global add serve"
   },
-  // Configure tool-specific properties.
+  "forwardPorts": [3000],
+  "hostRequirements": {
+    "cpus": 8,
+    "memory": "16gb"
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Application port"
+    },
+    "64120": {
+      "label": "SonarLint"
+    }
+  },
+  "remoteEnv": {
+    "NODE_ENV": "development",
+    "PATH": "${containerEnv:PATH}"
+  },
+  "remoteUser": "comnori",
   "customizations": {
     "vscode": {
       "extensions": [
-        "formulahendry.auto-rename-tag",
         "aaron-bond.better-comments",
-        "mikestead.dotenv",
-        "usernamehw.errorlens",
-        "dsznajder.es7-react-js-snippets",
-        "dbaeumer.vscode-eslint",
-        "mhutchie.git-graph",
         "chrisbibby.hide-node-modules",
-        "oderwat.indent-rainbow",
-        "liamhammett.inline-parameters",
-        "PKief.material-icon-theme",
         "christian-kohler.npm-intellisense",
-        "42Crunch.vscode-openapi",
+        "CS50.extension-uninstaller",
+        "dbaeumer.vscode-eslint",
+        "dotenv.dotenv-vscode",
+        "eamodio.gitlens",
+        "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
-        "SonarSource.sonarlint-vscode",
+        "fabiospampinato.vscode-todo-plus",
+        "fengzhu.css-module-intellisense",
+        "formulahendry.auto-rename-tag",
+        "liamhammett.inline-parameters",
+        "lokalise.i18n-ally",
         "meganrogge.template-string-converter",
-        "rangav.vscode-thunder-client",
-        "redhat.vscode-yaml",
-        "Huuums.vscode-fast-folder-structure",
-        "zhuangtongfa.material-theme"
-        // 현재 feature에서 설치한 extension을 제거하는 기능이 없기 때문에 개별적으로 사용안함으로(작업영역) 사용 More info : https://github.com/devcontainers/features/issues/386
-        //["vscjava.vscode-java-pack"]
+        "mhutchie.git-graph",
+        "mikestead.dotenv",
+        "ms-playwright.playwright",
+        "ms-vscode.live-server",
+        "oderwat.indent-rainbow",
+        "PKief.material-icon-theme",
+        "SonarSource.sonarlint-vscode",
+        "usernamehw.errorlens",
+        "zhuangtongfa.material-theme",
+        "Huuums.vscode-fast-folder-structure"
       ],
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh",
-        "editor.formatOnSave": true,
+        "extension-uninstaller.uninstall": ["vscjava.vscode-java-pack"],
         "editor.codeActionsOnSave": {
           "source.fixAll": true,
           "source.organizeImports": true
         },
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "sonarlint.disableTelemetry": true,
-        "recommendations": [
-          "streetsidesoftware.code-spell-checker",
-          "yzane.markdown-pdf",
-          "yzhang.markdown-all-in-one",
-          "DavidAnson.vscode-markdownlint"
-        ]
+        "editor.foldingImportsByDefault": true,
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "files.exclude": {
+          "**/.DS_Store": true,
+          "**/.git": true,
+          "**/.hg": true,
+          "**/.svn": true,
+          "**/CVS": true,
+          "**/node_modules": true,
+          "**/Thumbs.db": true
+        },
+        "terminal.integrated.defaultProfile.linux": "zsh"
       }
     }
-  },
-  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-  "remoteUser": "demian",
-  "remoteEnv": {
-    "PATH": "${containerEnv:PATH}",
-    "NODE_ENV": "development"
-  },
-  "hostRequirements": {
-    "cpus": 2,
-    "memory": "8gb"
   }
 }

@@ -14,7 +14,7 @@
 
 ## Installation
 
-1. [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+1. Docker or [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 2. [Visual Studio Code](https://code.visualstudio.com/)
     - [Dev Containers](vscode:extension/ms-vscode-remote.remote-containers)
     - [Docker](vscode:extension/ms-azuretools.vscode-docker)
@@ -44,22 +44,21 @@
   - [Better Comments](vscode:extension/aaron-bond.better-comments)
   - [DotENV](vscode:extension/mikestead.dotenv)
   - [Error Lens](vscode:extension/usernamehw.errorlens)
-  - [VS Code ES7+ React/Redux/React-Native/JS snippets](vscode:extension/dsznajder.es7-react-js-snippets)
   - [ESLint](vscode:extension/dbaeumer.vscode-eslint)
-  - [ESLint](vscode:extension/mhutchie.git-graph)
+  - [GitLens](vscode:extension/eamodio.gitlens)
+  - [git-graph](vscode:extension/mhutchie.git-graph)
   - [Hide Node Modules](vscode:extension/chrisbibby.hide-node-modules)
   - [indent-rainbow](vscode:extension/oderwat.indent-rainbow)
   - [Inline Parameters for VSCode](vscode:extension/liamhammett.inline-parameters)
   - [Material Icon Theme](vscode:extension/PKief.material-icon-theme)
   - [npm Intellisense](vscode:extension/christian-kohler.npm-intellisense)
-  - [OpenAPI (Swagger) Editor](vscode:extension/42Crunch.vscode-openapi)
   - [Prettier - Code formatter](vscode:extension/esbenp.prettier-vscode)
   - [SonarLint](vscode:extension/SonarSource.sonarlint-vscode)
   - [Template String Converter](vscode:extension/meganrogge.template-string-converter)
-  - [Thunder Client](vscode:extension/rangav.vscode-thunder-client)
-  - [YAML](vscode:extension/redhat.vscode-yaml)
   - [Folder Templates](vscode:extension/Huuums.vscode-fast-folder-structure)
   - [One Dark Pro](vscode:extension/zhuangtongfa.material-theme)
+  - [EditorConfig](vscode:extension/EditorConfig.EditorConfig)
+  - [Todo+](vscode:extension/fabiospampinato.vscode-todo-plus)
 - Recommedations
   - [Code Spell Checker](vscode:extension/streetsidesoftware.code-spell-checker)
   - [Markdown PDF](vscode:extension/yzane.markdown-pdf)
@@ -70,7 +69,7 @@
 
 |Options|Value|
 |-|-|
-|Default terminal|zsh|
+|Default terminal|ohmyzsh|
 |formatOnSave|true|
 |source.fixAll|true|
 |source.organizeImports|true|
@@ -80,18 +79,15 @@
 
 |Options|Value|
 |-|-|
-|user|demian|
+|user|comnori|
 
 ### etc
-
-- prettierrc 추가
 
 ## TODO
 
 - [ ] 백엔드 템플릿 연동 (private)
-- [ ] 불필요한 확장 기능 제거 (vscjava.vscode-java-pack)
-- [ ] MockAPI 기능 추가
-- [ ] workspace 폴더 변경 -> /home/demian/workspace
+- [x] 불필요한 확장 기능 제거 (vscjava.vscode-java-pack)
+- [ ] workspace 폴더 변경 -> /home/comnori/workspace
 
 ## Reference
 
