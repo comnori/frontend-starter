@@ -1,5 +1,5 @@
 {
-  "name": "vite-template-awesome-soho",
+  "name": "frontend-starter",
   "image": "mcr.microsoft.com/devcontainers/base:jammy",
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
