@@ -35,7 +35,7 @@
 
 - Base : Ubuntu 22.04 LTS
 - Features
-  - Node 20 LTS
+  - NodeJS 20 LTS
   - oh-my-zsh
   - MS java 21
 
