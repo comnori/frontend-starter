@@ -21,19 +21,23 @@
 
 ## Getting start
 
-```shell
-> git clone https://github.com/comnori/frontend-starter.git
-```
+1. git clone
 
-![dev-containers-reopen](https://code.visualstudio.com/assets/docs/devcontainers/create-dev-container/dev-containers-reopen.png)
+    ```shell
+    > git clone --depth 1 https://github.com/comnori/frontend-starter.git
+    ```
+
+2. change name in `devcontainer.json`
+3. Constructed with [reference](#reference) to reference materials
+4. devconatiner build
 
 ## Customizations
 
 - Base : Ubuntu 22.04 LTS
 - Features
-  - Node 18 LTS
+  - Node 20 LTS
   - oh-my-zsh
-  - ms java 17
+  - MS java 21
 
 ### VS Code
 
@@ -58,12 +62,7 @@
   - [Folder Templates](vscode:extension/Huuums.vscode-fast-folder-structure)
   - [One Dark Pro](vscode:extension/zhuangtongfa.material-theme)
   - [EditorConfig](vscode:extension/EditorConfig.EditorConfig)
-  - [Todo+](vscode:extension/fabiospampinato.vscode-todo-plus)
-- Recommedations
-  - [Code Spell Checker](vscode:extension/streetsidesoftware.code-spell-checker)
-  - [Markdown PDF](vscode:extension/yzane.markdown-pdf)
-  - [Markdown All in One](vscode:extension/yzhang.markdown-all-in-one)
-  - [markdownlint](vscode:extension/DavidAnson.vscode-markdownlint)
+  - [Todo Tree](vscode:extension/Gruntfuggly.todo-tree)
 
 #### Settings
 
@@ -82,12 +81,6 @@
 |user|comnori|
 
 ### etc
-
-## TODO
-
-- [ ] 백엔드 템플릿 연동 (private)
-- [x] 불필요한 확장 기능 제거 (vscjava.vscode-java-pack)
-- [ ] workspace 폴더 변경 -> /home/comnori/workspace
 
 ## Reference
 

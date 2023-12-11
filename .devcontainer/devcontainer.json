@@ -8,10 +8,13 @@
       "userUid": "1001"
     },
     "ghcr.io/devcontainers/features/java:1": {
-      "version": "17"
+      "installGradle": true,
+      "installMaven": true,
+      "version": "21",
+      "jdkDistro": "ms"
     },
     "ghcr.io/devcontainers/features/node:1": {
-      "version": "18"
+      "version": "20"
     }
   },
   "postCreateCommand": {
@@ -20,7 +23,9 @@
     "Oh My Zsh Installer for Docker": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/zsh-in-docker.sh -t jonathan -p git -p ssh-agent -p https://github.com/zsh-users/zsh-autosuggestions -p https://github.com/zsh-users/zsh-completions",
     "Installation global package": "yarn global add serve"
   },
-  "forwardPorts": [3000],
+  "forwardPorts": [
+    3000
+  ],
   "hostRequirements": {
     "cpus": 8,
     "memory": "16gb"
@@ -50,7 +55,7 @@
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
-        "fabiospampinato.vscode-todo-plus",
+        "Gruntfuggly.todo-tree",
         "fengzhu.css-module-intellisense",
         "formulahendry.auto-rename-tag",
         "liamhammett.inline-parameters",
@@ -68,7 +73,9 @@
         "Huuums.vscode-fast-folder-structure"
       ],
       "settings": {
-        "extension-uninstaller.uninstall": ["vscjava.vscode-java-pack"],
+        "extension-uninstaller.uninstall": [
+          "vscjava.vscode-java-pack"
+        ],
         "editor.codeActionsOnSave": {
           "source.fixAll": true,
           "source.organizeImports": true
