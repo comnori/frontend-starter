@@ -38,31 +38,13 @@
   - NodeJS 20 LTS
   - oh-my-zsh
   - MS java 21
+    - for SonarLint
 
 ### VS Code
 
 #### Extensions
 
-- Requirments
-  - [Auto Rename Tag](vscode:extension/formulahendry.auto-rename-tag)
-  - [Better Comments](vscode:extension/aaron-bond.better-comments)
-  - [DotENV](vscode:extension/mikestead.dotenv)
-  - [Error Lens](vscode:extension/usernamehw.errorlens)
-  - [ESLint](vscode:extension/dbaeumer.vscode-eslint)
-  - [GitLens](vscode:extension/eamodio.gitlens)
-  - [git-graph](vscode:extension/mhutchie.git-graph)
-  - [Hide Node Modules](vscode:extension/chrisbibby.hide-node-modules)
-  - [indent-rainbow](vscode:extension/oderwat.indent-rainbow)
-  - [Inline Parameters for VSCode](vscode:extension/liamhammett.inline-parameters)
-  - [Material Icon Theme](vscode:extension/PKief.material-icon-theme)
-  - [npm Intellisense](vscode:extension/christian-kohler.npm-intellisense)
-  - [Prettier - Code formatter](vscode:extension/esbenp.prettier-vscode)
-  - [SonarLint](vscode:extension/SonarSource.sonarlint-vscode)
-  - [Template String Converter](vscode:extension/meganrogge.template-string-converter)
-  - [Folder Templates](vscode:extension/Huuums.vscode-fast-folder-structure)
-  - [One Dark Pro](vscode:extension/zhuangtongfa.material-theme)
-  - [EditorConfig](vscode:extension/EditorConfig.EditorConfig)
-  - [Todo Tree](vscode:extension/Gruntfuggly.todo-tree)
+- [JS/TS AWESOME-SOHO Extension Pack](https://marketplace.visualstudio.com/items?itemName=comnori.js-awesome-soho-extension-pack)
 
 #### Settings
 
