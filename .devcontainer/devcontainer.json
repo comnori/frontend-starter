@@ -18,9 +18,8 @@
     }
   },
   "postCreateCommand": {
-    "Change User shell": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/init.sh",
+    "Oh My Zsh Installer for Docker": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/init.sh",
     "Yarn enable": "corepack enable",
-    "Oh My Zsh Installer for Docker": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/zsh-in-docker.sh -t jonathan -p git -p ssh-agent -p https://github.com/zsh-users/zsh-autosuggestions -p https://github.com/zsh-users/zsh-completions",
     "Installation global package": "yarn global add serve"
   },
   "forwardPorts": [
