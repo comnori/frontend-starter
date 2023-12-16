@@ -57,6 +57,7 @@
         },
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.foldingImportsByDefault": true,
+        "editor.fontFamily": "'D2Coding', Consolas, 'Courier New', monospace",
         "editor.formatOnPaste": true,
         "editor.formatOnSave": true,
         "files.exclude": {
@@ -68,7 +69,8 @@
           "**/node_modules": true,
           "**/Thumbs.db": true
         },
-        "terminal.integrated.defaultProfile.linux": "zsh"
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.fontFamily": "'D2CodingLigature Nerd Font Mono', monospace"
       }
     }
   }
