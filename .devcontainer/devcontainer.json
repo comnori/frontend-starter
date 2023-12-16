@@ -25,10 +25,6 @@
   "forwardPorts": [
     3000
   ],
-  "hostRequirements": {
-    "cpus": 8,
-    "memory": "16gb"
-  },
   "portsAttributes": {
     "3000": {
       "label": "Application port"
