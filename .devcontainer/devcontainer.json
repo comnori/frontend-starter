@@ -18,9 +18,7 @@
     }
   },
   "postCreateCommand": {
-    "Oh My Zsh Installer for Docker": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/init.sh",
-    "Yarn enable": "corepack enable",
-    "Installation global package": "yarn global add serve"
+    "Initscript": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/init.sh"
   },
   "forwardPorts": [
     3000
