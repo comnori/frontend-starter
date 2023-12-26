@@ -39,7 +39,8 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "comnori.js-awesome-soho-extension-pack"
+        "comnori.js-awesome-soho-extension-pack",
+        "CS50.extension-uninstaller"
       ],
       "settings": {
         "extension-uninstaller.uninstall": [
