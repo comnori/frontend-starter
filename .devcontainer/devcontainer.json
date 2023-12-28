@@ -18,7 +18,8 @@
     }
   },
   "postCreateCommand": {
-    "Initscript": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/init.sh"
+    "preInit": "chmod +x ${containerWorkspaceFolder}/.devcontainer/scripts/init.sh",
+    "Init": "${containerWorkspaceFolder}/.devcontainer/scripts/init.sh > init.log"
   },
   "forwardPorts": [
     3000
